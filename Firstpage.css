@@ -183,6 +183,13 @@ header{
     width: 100%;
     transform: translateY(-4rem);
 }
+#search{
+    color: var(--black);
+ 
+    &:hover{
+        color: var(--blue);
+    }
+}
 .search-form{
     width: 50%;
     position: absolute;
@@ -694,6 +701,17 @@ header{
     }
     #menu-btn{
         display: initial;
+    }
+    #search{
+        color: var(--white);
+        background-color: var(--black);
+        /* border-radius: 5rem; */
+        padding: 1.2rem 2rem;
+    
+        &:hover{
+            color: var(--light-color);
+            background-color: var(--blue);
+        }
     }
     .navbar{
         position: absolute;
