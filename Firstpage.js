@@ -7,10 +7,11 @@ let cancel = document.querySelector('#close-contact-info')
 let actContact = document.querySelector('.contact')
 
 search.onclick = () =>{
-    searchForm.classList.toggle('active'); // it finally worked
+    // searchForm.classList.toggle('active'); it finally worked
     navbar.classList.remove("active");
     menubtn.classList.remove('fa-times');
     cancel.classList.remove('active');
+    contact.classList.toggle('active');
 }
 
 menubtn.onclick = () =>{
@@ -23,7 +24,7 @@ menubtn.onclick = () =>{
 
 actContact.onclick = () =>{
     navbar.classList.remove("active");
-    contact.classList.toggle('active');
+    // contact.classList.toggle('active');
     cancel.classList.remove('active');
     searchForm.classList.remove('active');
     menubtn.classList.remove('fa-times');
