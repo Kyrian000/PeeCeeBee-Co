@@ -45,14 +45,14 @@ window.onscroll = () =>{
 // }
 
 
-var swiper = new Swiper(".home-slider",{
-    loop:true,
-    grabCursor:true,
-    navigation:{
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-} );
+// var swiper = new Swiper(".home-slider",{
+//     loop:true,
+//     grabCursor:true,
+//     navigation:{
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// } );
 
 var swiper = new Swiper(".review-slider",{
     loop:true,
@@ -75,7 +75,26 @@ var swiper = new Swiper(".review-slider",{
 
 } );
 
+var swiper = new Swiper(".blogs-slider",{
+    loop:true,
+    effect: "coverflow",
+    grabCursor:true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: 120,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
 
+} );
 
 
 
