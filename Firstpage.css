@@ -766,6 +766,54 @@ header{
 /* Blogs section ends here */
 
 
+/* footer starts here */
+
+.footer{
+    padding-top: 2.5rem;
+    text-align: center;
+    background-image: url('Projects/background1.jpg');
+    h1{
+        font-size: 3rem;
+        /* font-family: "Dancing Script", cursive; */
+        font-weight: 600;
+        padding-bottom: 2.5rem;
+    }
+    .links{
+
+        a{            
+            font-size: 2rem;
+            color: var(--black);
+            height: 4rem;
+            width: 4rem;
+            line-height: 4rem;
+            font-size: 2rem;
+            background: var(--light-color);
+            border-radius: 3rem;
+            color: var(--black);
+            cursor: pointer;
+            text-align: center;
+            margin: 0 .3rem;
+
+            &:hover{
+                background-color: var(--blue);
+                color: var(--white);
+
+            }
+        }
+    }
+    .credit{
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        span{
+            font-family: "Dancing Script", cursive;
+            color: var(--white);
+        }
+    }
+}
+
+/* footer ends here */
+
+
 @media screen and (max-width: 773px) {
     html{
         font-size: 55%;
