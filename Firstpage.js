@@ -82,6 +82,10 @@ var swiper = new Swiper(".blogs-sliders",{
     centeredSlides: true,
     slidesPerView: "auto",
     spaceBetween: 120,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -96,6 +100,31 @@ var swiper = new Swiper(".blogs-sliders",{
 
 } );
 
+
+var swiper = new Swiper(".logo-slider",{
+    loop:true,
+    grabCursor:true,
+    spaceBetween: 10,
+    breakpoints:{
+        640:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+});
 
 
 
