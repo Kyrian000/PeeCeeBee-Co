@@ -75,7 +75,7 @@ var swiper = new Swiper(".review-slider",{
 
 } );
 
-var swiper = new Swiper(".blogs-slider",{
+var swiper = new Swiper(".blogs-sliders",{
     loop:true,
     effect: "coverflow",
     grabCursor:true,
