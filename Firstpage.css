@@ -226,7 +226,7 @@ header{
 
 /* home */
 #home{    
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0)), url('Images/download.jpeg');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0)), url('Images/construction\ engineer\ supervising\ work\ at\ construction\ site\ Background.jpeg');
     background-size: cover;
     background-position: center;
     height: 95vh;
@@ -796,17 +796,24 @@ header{
 .footer{
     padding-top: 2.5rem;
     text-align: center;
-    
+    background-color: var(--black);
     h1{
+        color: var(--white);
+        padding-top: 2rem;
         font-size: 4rem;
         font-weight: 500;
+    }
+    p{
+        color: var(--white);
         padding-bottom: 2.5rem;
+        font-size: 3rem;
+        font-family: "Dancing Script", cursive;
     }
     .links{
 
         a{            
             font-size: 4rem;
-            color: var(--black);
+            color: var(--white);
             height: 4rem;
             width: 4rem;
             line-height: 4rem;
@@ -820,11 +827,12 @@ header{
             &:hover{
                 background-color: var(--blue);
                 color: var(--white);
-
+                
             }
         }
     }
     .credit{
+        color: var(--white);
         padding-top: 2.5rem;
         font-size: 2rem;
         span{
