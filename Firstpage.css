@@ -796,24 +796,24 @@ header{
 .footer{
     padding-top: 2.5rem;
     text-align: center;
-    background-color: var(--black);
+    background-color: var(--white);
     h1{
-        color: var(--white);
+        color: var(--black);
         padding-top: 2rem;
         font-size: 4rem;
         font-weight: 500;
     }
-    p{
+    /* p{
         color: var(--white);
         padding-bottom: 2.5rem;
         font-size: 3rem;
         font-family: "Dancing Script", cursive;
-    }
+    } */
     .links{
 
         a{            
             font-size: 4rem;
-            color: var(--white);
+            color: var(--black);
             height: 4rem;
             width: 4rem;
             line-height: 4rem;
@@ -832,7 +832,7 @@ header{
         }
     }
     .credit{
-        color: var(--white);
+        color: var(--black);
         padding-top: 2.5rem;
         font-size: 2rem;
         span{
