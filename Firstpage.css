@@ -241,6 +241,9 @@ header{
     h4{
         color: var(--white);
         font-size: 2rem;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0%;
         
         &:hover{
             color: var(--blue);
@@ -257,7 +260,6 @@ header{
             transition: .5s;
             transition-delay: .25s;
             font-size: 4rem;
-            transform: rotate(45deg);
             background-color: transparent;
             padding: 0 1rem;
             border-left: 2px solid var(--white);
