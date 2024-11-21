@@ -7,10 +7,11 @@ let cancel = document.querySelector('#close-contact-info')
 let actContact = document.querySelector('.contact')
 
 search.onclick = () =>{
-    searchForm.classList.toggle('active'); // it finally worked
+    // searchForm.classList.toggle('active'); it finally worked
     navbar.classList.remove("active");
     menubtn.classList.remove('fa-times');
     cancel.classList.remove('active');
+    contact.classList.toggle('active');
 }
 
 menubtn.onclick = () =>{
@@ -23,7 +24,7 @@ menubtn.onclick = () =>{
 
 actContact.onclick = () =>{
     navbar.classList.remove("active");
-    contact.classList.toggle('active');
+    // contact.classList.toggle('active');
     cancel.classList.remove('active');
     searchForm.classList.remove('active');
     menubtn.classList.remove('fa-times');
@@ -44,14 +45,14 @@ window.onscroll = () =>{
 // }
 
 
-var swiper = new Swiper(".home-slider",{
-    loop:true,
-    grabCursor:true,
-    navigation:{
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-} );
+// var swiper = new Swiper(".home-slider",{
+//     loop:true,
+//     grabCursor:true,
+//     navigation:{
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// } );
 
 var swiper = new Swiper(".review-slider",{
     loop:true,
@@ -74,8 +75,56 @@ var swiper = new Swiper(".review-slider",{
 
 } );
 
+var swiper = new Swiper(".blogs-sliders",{
+    loop:true,
+    effect: "coverflow",
+    grabCursor:true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: 120,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+
+} );
 
 
+var swiper = new Swiper(".logo-slider",{
+    loop:true,
+    grabCursor:true,
+    spaceBetween: 10,
+    breakpoints:{
+        640:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+});
 
 
 
