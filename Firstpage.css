@@ -153,6 +153,9 @@ header{
     }
     
 }
+header.active{
+    background-color: transparent;
+}
 #menu-btn{
     display: none;
 }
@@ -166,6 +169,7 @@ header{
     color: var(--black);
     font-size: 1.5rem;
     position: relative;
+    animation: appear .5s linear;    
     
 }
 
@@ -244,7 +248,7 @@ header{
         animation: appear linear;
         animation-timeline: view();
         animation-range: entry 0%;
-        
+        animation: appear1 .5s linear;    
         &:hover{
             color: var(--blue);
             cursor: context-menu;
@@ -254,7 +258,7 @@ header{
         font-family:  "Dancing Script", cursive;
         font-size: xx-large;
         color: var(--black);
-        
+
         &:hover{
             color: var(--white);
             transition: .5s;
@@ -290,13 +294,14 @@ header{
 
 #home h1{
     
-    font-size: 8rem;
+    font-size: 7rem;
     color: var(--blue);
+    animation: appear1 .5s linear;
 
+    
     &:hover{
         color: var(--white);
-        cursor:cell; 
-        font-size: 9rem;
+        cursor:cell;        
     }
 }
 
