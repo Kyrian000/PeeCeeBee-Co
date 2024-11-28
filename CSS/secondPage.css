@@ -140,7 +140,7 @@ nav{
 }
 /* Solidify navbar on scroll */
 .window-scroll{
-    background: rgba(255, 255, 255, 0.767);
+    background: rgba(255, 255, 255, 0.959);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.404);
     a{
         color: var(--color-black);
@@ -610,6 +610,10 @@ header{
 
             .categories-left{
                 margin-right: 0;
+
+                h1{
+                    font-size: 2rem;
+                }
             }
         }
     }
@@ -673,9 +677,9 @@ header{
 
     /* header  */
     header{
-        height: 90vh;
+        height: 95vh;
         .header-container{
-            margin-top: 5rem;
+            margin-top: 1.5rem;
             grid-template-columns: 1fr;
             text-align: center;
             /* margin-top: 0; */
