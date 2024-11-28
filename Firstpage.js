@@ -104,7 +104,6 @@ var swiper = new Swiper(".blogs-sliders",{
 
 var swiper = new Swiper(".logo-slider",{
     loop:true,
-    grabCursor:true,
     spaceBetween: 10,
     breakpoints:{
         640:{
