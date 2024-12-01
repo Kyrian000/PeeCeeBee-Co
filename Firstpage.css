@@ -373,7 +373,6 @@ header.active{
     margin-top: 5rem;
     padding-top: 4rem;
     padding: 3rem;
-
     h1{
         
         margin-left: 3rem;
@@ -916,7 +915,9 @@ header.active{
 .about {
     margin-right: 3rem;
     margin-left: 3rem;
+    
     .heading{
+        margin-bottom: 3rem;
         margin-top: 3rem;        
         font-size: 3rem;
         color: var(--black);

@@ -65,6 +65,8 @@
         &:hover{
             opacity: 1;
             transform: rotate(5deg);
+            color: rgb(255, 254, 253);
+            background: rgba(0, 0, 0, 0.623);    
         }
     }
 }
@@ -87,6 +89,8 @@
         animation: appear3 linear 400ms;
         &:hover{
             transform: rotate(5deg);
+            color: black;
+            background: rgba(238, 230, 230, 0.637);
         }
     }
 }
