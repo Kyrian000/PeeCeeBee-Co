@@ -46,7 +46,7 @@
 }
 
 .left-side{
-    background-image: url('/Images/Background4.jpeg');
+    background-image: url('Images/Background4.jpeg');
     background-size: cover;
     background-position: center;
     
@@ -70,7 +70,7 @@
 }
 
 .right-side{
-    background-image: url('/images\(studyhub\)/Header.jpg');
+    background-image: url('images\(studyhub\)/Header.jpg');
     background-size: cover;
     background-position: center;
     &:hover{
