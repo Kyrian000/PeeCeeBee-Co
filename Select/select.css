@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all 400ms ease;
+}
+@keyframes appear1{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes appear2{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes appear3{
+    from{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+.left-side, .right-side{
+    height: 100vh;
+    width: 100%;
+}
+
+.left-side{
+    background-image: url('/Images/Background4.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+    &:hover{
+        opacity: 0.7;
+    }
+    a{
+        font-size: 2.2rem;
+        font-family: "Poppins", sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background: rgba(255, 255, 255, 0.336);
+        border-radius: 2rem;
+        animation: appear2 linear 400ms;
+        &:hover{
+            opacity: 1;
+            transform: rotate(5deg);
+        }
+    }
+}
+
+.right-side{
+    background-image: url('/images\(studyhub\)/Header.jpg');
+    background-size: cover;
+    background-position: center;
+    &:hover{
+        opacity: 0.5;
+    }
+    a{
+        font-size: 2.2rem;
+        font-family: "Poppins", sans-serif;
+        color: rgb(255, 253, 253);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background: rgba(0, 0, 0, 0.623);
+        border-radius: 2rem;
+        animation: appear3 linear 400ms;
+        &:hover{
+            transform: rotate(5deg);
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .left-side, .right-side{
+        height: 50vh;
+        width: 100%;
+    }   
+}
