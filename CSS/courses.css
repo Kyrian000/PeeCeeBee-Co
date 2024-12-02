@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all 400ms ease;
+}
+body{
+    background-image: url('/Images/Under\ Construction.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 50vw;
+        height: 50vh;
+        background-color: black;
+    }
+}
