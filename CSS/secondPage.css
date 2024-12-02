@@ -132,8 +132,15 @@ nav{
         a{
             font-size: 0.9rem;
             &:hover{
-                color: var(--color-white);
+                color: var(--color-danger);
+                border-bottom: 1px solid var(--color-white);
             }
+        }
+        #home{
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-danger);
+            border-bottom: 1px solid var(--color-black);
         }
     }
     
@@ -142,9 +149,11 @@ nav{
 .window-scroll{
     background: rgba(255, 255, 255, 0.959);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.404);
+    
     a{
         color: var(--color-black);
         font-weight: 500;
+        
     }
     span{
         color: var(--color-primary);
@@ -549,6 +558,9 @@ header{
                 &:nth-child(5){
                     animation-delay: .4s;
                 }
+                #home{
+                    border-bottom: none;
+                }
                 a{
                     background: var(--color-bg2);
                     box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.404);
@@ -557,9 +569,13 @@ header{
                     display: grid;
                     place-items: center;
                     color: var(--color-white);
+                    
                     &:hover{
                         background: var(--color-bg1);
+                        color: var(--color-danger);
+                        border-bottom: none;
                     }
+                    
                 }
             }
         }
