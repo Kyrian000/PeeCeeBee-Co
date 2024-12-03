@@ -21,3 +21,24 @@ window.addEventListener('scroll', () =>{
         menuBtn.style.display = "inline-block";
         closeBtn.style.display = "none";
     });
+
+    var swiper = new Swiper(".facilities-slider", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 200,
+        // centeredSlides: true,
+        grabCursor:true,
+        
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        
+      });
+    

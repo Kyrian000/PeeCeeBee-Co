@@ -31,9 +31,55 @@ nav{
     }
 }
 
+/* mision/vision */
+/* Popular courses  starts*/
+
+.mission-vision{
+    margin-top: 2.5rem;
+    .mission-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        .mission{
+            background: var(--color-bg1);
+            text-align: center;
+            /* border: 1px solid var(--color-primary); */
+            &:nth-child(2){
+                transform: translateY(-1rem);
+            }
+            .mission-image{
+                font-size: 7rem;
+                margin-top: 1.5rem;
+            }
+            &:hover{
+                transition-delay: .2s;
+                transform: translateY(1rem);
+                box-shadow: 0 0 2rem rgba(0,0,0,0.4);
+                background: transparent;    
+            }
+            .mission-info{
+                padding: 2rem;
+
+                h4{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                    margin: 1.2rem 0 2rem;
+                }
+                
+            }
+        }
+        
+    }
+
+}
+
+
 /* Achievements */
 .about-achievements{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     .about-achievements-container{
         display: grid;
         grid-template-columns: 40% 60%;
@@ -164,7 +210,37 @@ nav{
 /* Team section ends */
 
 
+/* facilities section starts */
+.facilities-container{
+    .facilities{
 
+        .facility{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        
+        .right{
+            img{
+            border-radius: 3rem 0 3rem 0;
+            }
+        }
+        .left{
+            margin-top: 1rem;
+            
+            h4{
+                color: var(--color-danger);
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                line-height: 2.5;
+            }
+        }
+    }
+
+
+    }
+}
 
 
 
@@ -179,8 +255,26 @@ nav{
         }
     }
 
-    .about-achievements{
+    /* mission/vision courses  */
+    .mission-vision{
         margin-top: 2rem;
+        .mission-container{
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            .mission{
+                &:nth-child(2){
+                    transform: translateY(0);
+                }
+                &:nth-child(3){
+                    transform: translateX(13rem);
+                }
+            }
+        }
+    }
+
+
+    .about-achievements{
+        /* margin-top: 2rem; */
         .about-achievements-container{
             grid-template-columns: 1fr;
             gap: 4rem;
@@ -199,12 +293,41 @@ nav{
             }
         }
     }
+    .facilities-container{
+        .facilities{
+            .facility{
+                .left{
+                    margin-top: 2rem;
+                    h4{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        line-height: 1.3;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 /* phone mobile queries */
 @media screen and (max-width: 600px) {
     
+    .mission-vision{
+        margin-top: 2rem;
+        .mission-container{
+            grid-template-columns: 1fr;
+            .mission{
+                &:nth-child(2){
+                    transform: translateY(0);
+                }
+                &:nth-child(3){
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
     .about-achievements{
         
         .about-achievements-container{
@@ -236,6 +359,18 @@ nav{
                 }
             }
         }
+        .select{
+            margin-top: 3rem;
+            color: var(--color-light);
+        }
     }
-        
+    
+    
+    .facilities-container{
+        .facilities{
+            .facility{
+            grid-template-columns: 1fr;
+            }
+        }
+    }
 }

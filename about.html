@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="CSS/secondPage.css">
     <link rel="stylesheet" href="CSS/about.css">
 
+         <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
@@ -41,12 +43,48 @@
     </nav>
     <!-- end of navbar -->
 
+<!-- Mission/vision starts -->
 
+<section class="mission-vision">
+    <h2>Welcome to PeeCeeBeeStudyhub</h2>
+    <div class="container mission-container">
+        <article class="mission">
+            <div class="mission-image">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="mission-info">
+                <h4>Vision</h4>
+                <p>We aim to empower students through optimal, child-centered learning experiences in a nurturing environment.</p>
+            </div>
+        </article>
 
+        <article class="mission">
+            <div class="mission-image">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="mission-info">
+                <h4>Mission</h4>
+                <p>Bridging the Learning gap, we foster child-centered learning that promotes confidence and critical thinking.</p>
+            </div>
+        </article>
+
+        <article class="mission">
+            <div class="mission-image">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div class="mission-info">
+                <h4>Our Values</h4>
+                <p>We cherish each child, guiding them in embracing diversity and virtues, creating an inclusive, empowering learning environment.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- Mission/vision ends -->
 
 
 <!-- Achievments section starts -->
-
 
 <section class="about-achievements">
     <div class="container about-achievements-container">
@@ -94,7 +132,7 @@
 <!-- Team section starts -->
 
 <section class="team">
-    <h2>Meet the Team</h2>
+    <h2>Meet the main Team</h2>
     <div class="container team-container">
         <article class="team-member">
             <div class="team-member-image">
@@ -146,7 +184,7 @@
                 <img src="images(studyhub)/tm5.jpg" alt="">
             </div>
             <div class="team-member-info">
-                <h4>Mr. Surname Firstname </h4>
+                <h4>Ms. Surname Firstname </h4>
                 <p>HR manager</p>
             </div>
             <div class="team-member-socials">
@@ -156,14 +194,76 @@
             </div>
         </article>
 
-        
+        <p class="select">.....select for socials.</p>
     </div>
 </section>
 
 <!-- team section ends -->
 
+<!-- facilities starts here -->
 
-    <!-- footer starts -->
+<section class="container facilities-container facilities-slider">
+    <h2>Our Facilities</h2>        
+    <div class="swiper-wrapper facilities">
+        <article class="swiper-slide facility">
+            <div class="right">
+                <img src="images(studyhub)/ComputerLab.jpg" alt="KikitheMan">
+            </div>
+            <div class="left">
+                <h4>Equipped Computer Room</h4>
+                <p>Discover the perfect place to enhance your learning at PeeCeeBee! With a state-of-the-art computer room and expert tutors, we offer personalized lessons tailored to your needs. Join us to boost your skills and achieve your academic goals!</p>
+            </div>
+            
+        </article>
+
+        <article class="swiper-slide facility">
+            <div class="right">
+                <img src="images(studyhub)/Classroom.jpg" alt="KikitheMan">
+            </div>
+            <div class="left">
+                <h4>Conducive Classroom</h4>
+                <p>Experience engaging learning at PeeCeeBee! Our classrooms provide a supportive environment with dedicated teachers who tailor lessons to meet each student's needs. Join us to foster your knowledge, develop skills, and achieve academic success together!</p>
+            </div>
+            
+        </article>
+
+        <article class="swiper-slide facility">
+            <div class="right">
+                <img src="images(studyhub)/Nursery.jpg" alt="KikitheMan">
+            </div>
+            <div class="left">
+                <h4>Nursery and DayCare</h4>
+                <p>Welcome to our nurturing nursery! We create a warm, safe environment where young children can explore, learn, and grow. Our dedicated staff offers engaging activities that promote early development and social skills. Join us for a joyful start to education!</p>
+            </div>
+            
+        </article>
+
+        <article class="swiper-slide facility">
+            <div class="right">
+                <img src="images(studyhub)/Solar.jpg" alt="KikitheMan">
+            </div>
+            <div class="left">
+                <h4>24/7 Power Supply</h4>
+                <p>Enjoy uninterrupted power with our 24/7 solar energy supply! Our state-of-the-art solar installations ensure reliable electricity around the clock, reducing your carbon footprint while saving on energy costs. Embrace sustainability and power your life with clean, renewable energy today!</p>
+            </div>
+            
+        </article>
+        
+        <article class="swiper-slide facility">
+            <div class="right">
+                <img src="images(studyhub)/Playground.jpg" alt="KikitheMan">
+            </div>
+            <div class="left">
+                <h4>Children's Playground</h4>
+                <p>Welcome to our children's playground and recreation area! With safe, engaging equipment and fun activities, kids can explore, play, and make new friends. Our vibrant space encourages physical activity and creativity, providing a perfect environment for joyful outdoor adventures!</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- facilities ends here -->
+
+<!-- footer starts -->
 
 <footer class="footer">
     <div class="container footer-container">
@@ -213,6 +313,11 @@
         <small>Copyright &copy; PEECEEBEE</small>
     </div>
 </footer>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 <!-- footer ends -->
     <script src="about.js"></script>  
