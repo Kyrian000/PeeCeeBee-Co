@@ -6,27 +6,38 @@ window.addEventListener('scroll', () =>{
 
 
 
-    const menu = document.querySelector(".nav-menu");
-    const menuBtn = document.querySelector("#open-menu-btn");
-    const closeBtn = document.querySelector("#close-menu-btn");
+const menu = document.querySelector(".nav-menu");
+const menuBtn = document.querySelector("#open-menu-btn");
+const closeBtn = document.querySelector("#close-menu-btn");
 
-    menuBtn.addEventListener("click", () => {
-        menu.style.display = "flex";
-        menuBtn.style.display = "none";
-        closeBtn.style.display = "inline-block";
-    });
+menuBtn.addEventListener("click", () => {
+    menu.style.display = "flex";
+    menuBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+});
 
-    closeBtn.addEventListener("click", () => {
+closeBtn.addEventListener("click", () => {
+    menu.style.display = "none";
+    menuBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+});
+
+// Close the menu when clicking outside of it
+document.addEventListener("click", (event) => {
+    const isClickInsideMenu = menu.contains(event.target) || menuBtn.contains(event.target) || closeBtn.contains(event.target);
+    if (!isClickInsideMenu) {
         menu.style.display = "none";
         menuBtn.style.display = "inline-block";
         closeBtn.style.display = "none";
-    });
+    }
+});
+
 
     var swiper = new Swiper(".facilities-slider", {
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 200,
-        // centeredSlides: true,
+        spaceBetween: 20,
+        centeredSlides: true,
         grabCursor:true,
         
         pagination: {
@@ -42,3 +53,4 @@ window.addEventListener('scroll', () =>{
         
       });
     
+      

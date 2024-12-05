@@ -212,12 +212,13 @@ nav{
 
 /* facilities section starts */
 .facilities-container{
+    overflow: hidden;
     .facilities{
-
         .facility{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 1rem;
+        /* overflow: hidden; */
         
         .right{
             img{
@@ -233,7 +234,7 @@ nav{
                 margin-bottom: 1rem;
             }
             p{
-                line-height: 2.5;
+                line-height: 2;
             }
         }
     }
@@ -316,9 +317,18 @@ nav{
     
     .mission-vision{
         margin-top: 2rem;
+        animation: none;
+        h2{
+            margin-bottom: 1.5rem;
+        }
         .mission-container{
             grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 0 1rem 0 1rem;
             .mission{
+                i{
+                    font-size: 6rem;
+                }
                 &:nth-child(2){
                     transform: translateY(0);
                 }

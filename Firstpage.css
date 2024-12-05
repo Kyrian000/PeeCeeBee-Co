@@ -608,7 +608,6 @@ header.active{
         }
     }
     .swiper-pagination{
-        position: relative;
         margin-top: 2rem;
     }
 }
