@@ -86,30 +86,41 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    
+        
     
     .start{
         letter-spacing: 10px;
         font-family: monospace;
         font-size: 1.5em;
         text-decoration: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.589);
-        background: rgba(245, 4, 4, 0.589);
+        border: 1px solid rgba(0, 0, 0, 0.589);
+        background: rgba(245, 4, 4, 0.699);
+        border-radius: 2rem;
         color: white;
         padding: 1rem 2rem;
         width: 100%;
         white-space: nowrap;
         overflow: hidden;
-        
         animation: 
             cursor .4s step-end infinite alternate, typer 5s ease;
         } 
+        &:hover{
+            background: rgba(245, 4, 4, 0);
+            border: 2px solid rgba(0, 0, 0, 0.664);
+            border-radius: 2rem;
+        }
 }
 
 /* typing effect */
 @keyframes typer {
-    from { width: 0}
-    
+    from {width: 0;}
+    from{
+        color: transparent;
+        background: transparent;
+    }
+    to{
+        color: white;
+    }
     /* to{
         border: 1px solid black;
         padding: 1rem 2rem;
@@ -119,6 +130,7 @@ body{
 /* cursor blinking */
 @keyframes cursor{
     50%{ border-color: transparent }
+    
 }
 
 @media screen and (max-width: 604px){
