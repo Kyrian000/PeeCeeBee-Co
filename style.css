@@ -138,6 +138,7 @@ body{
         width: 15rem;
     }
     .get-started{
-        top: 57%;
+        top: 58%;
+        font-size: 0.6em;
     }
 }
