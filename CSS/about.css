@@ -32,6 +32,7 @@ nav{
 }
 
 /* mision/vision */
+
 /* Popular courses  starts*/
 
 .mission-vision{
@@ -314,7 +315,6 @@ nav{
 
 /* phone mobile queries */
 @media screen and (max-width: 600px) {
-    
     .mission-vision{
         margin-top: 2rem;
         animation: none;

@@ -3,10 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Courses</title>
     <link rel="stylesheet" href="CSS/courses.css">
+    <link rel="stylesheet" href="CSS/secondPage.css">
+
+<!-- Font style cdns -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');    
+</style>
+<!-- Font style cdns -->
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
 </head>
 <body>
     
+ <!-- start of navbar -->
+ <nav>
+    <div class="container nav-container">
+        <a href="secondpage.html"> <h4>P<span>C</span>B Study<span>Hub</span> </h4> </a>
+            <ul class="nav-menu">
+                <li><a href="secondpage.html">Home</a></li>
+                <li><a id="about" href="about.html">About</a></li>
+                <li><a href="course.html" id="courses">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">School</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fas fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></i></button>
+</nav>
+<!-- end of navbar -->
+
+
+<!-- Courses starts -->
+
+<section class="coursess  courses-slider">
+    <h2 id="science">Sciences</h2>
+    <div class=" courses-container swiper-wrapper">
+        
+        <article class="swiper-slide course">
+            <div class="course-image">
+                <img src="images(studyhub)/Maths.jpg" alt="Mathematics">
+            </div>
+            <div class="course-info">
+                <h4>Mathematics</h4>
+                <p>Delve into the world of mathematics. Explore concepts, problem-solving techniques, and real-world applications that enhance critical thinking and analytical skills.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="swiper-slide course">
+            <div class="course-image">
+                <img src="images(studyhub)/English.jpg" alt="English">
+            </div>
+            <div class="course-info">
+                <h4>English Language</h4>
+                <p>Enhance your understanding of the English language. Explore grammar, vocabulary, and communication skills vital for effective expression and connection.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="swiper-slide course">
+            <div class="course-image">
+                <img src="images(studyhub)/Physics.jpg" alt="Physics">
+            </div>
+            <div class="course-info">
+                <h4>Physics</h4>
+                <p>Explore the fundamental principles of physics. Understand the laws governing the universe and their applications in technology and everyday life.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="swiper-slide course">
+            <div class="course-image">
+                <img src="images(studyhub)/Chemistry.jpg" alt="Chemistry">
+            </div>
+            <div class="course-info">
+                <h4>Chemistry</h4>
+                <p>Investigate the principles of chemistry. Discover the composition, properties, and reactions of substances that shape our world and drive innovation.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="swiper-slide course">
+            <div class="course-image">
+                <img src="images(studyhub)/Biology.jpg" alt="Biology">
+            </div>
+            <div class="course-info">
+                <h4>Biology</h4>
+                <p>Study the intricacies of life through biology. Explore ecosystems, genetics, and cellular processes to understand the diversity and complexity of living organisms.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="swiper-slide course">
+            <div class="course-image">
+                <img src="images(studyhub)/Geography.jpg" alt="Geography">
+            </div>
+            <div class="course-info">
+                <h4>Geography</h4>
+                <p>Analyze the relationships between people, places, and environments. Explore physical and human geography to understand global issues and spatial patterns.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="coursess courses-slider">
+    <h2 id="art">Arts</h2>
+    <div class="container courses-container swiper-wrapper">
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/Literature.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>Literature-in-English</h4>
+                <p>Discover the magic of literature in English! Explore captivating stories, diverse voices, and profound themes that inspire and transform.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/ARTS.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>Government</h4>
+                <p>Engage critically with government structures and policies. Understand their impact on society and explore avenues for meaningful civic participation. Join the conversation.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/CRS.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>CRS</h4>
+                <p>Examine the complexities of faith and spirituality. Explore Christian teachings, diverse religious practices, and their impact on culture and society.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/Maths.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>Mathematics</h4>
+                <p>Delve into the world of mathematics. Explore concepts, problem-solving techniques, and real-world applications that enhance critical thinking and analytical skills.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/English.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>English Language</h4>
+                <p>Enhance your understanding of the English language. Explore grammar, vocabulary, and communication skills vital for effective expression and connection.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="coursess courses-slider">
+    <h2 id="commerce">Commerce</h2>
+    <div class="container courses-container swiper-wrapper">
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/ARTS.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>ARTS</h4>
+                <p>From the inner workings of the Law to the Lovely literature composed by the Shakespears Of the world.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/Sciences (2).jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>SCIENCES</h4>
+                <p>Einstein has nothing on you! Become versed with the problem solving skills and contribute majorly in world affairs</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/Maths.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>Mathematics</h4>
+                <p>Delve into the world of mathematics. Explore concepts, problem-solving techniques, and real-world applications that enhance critical thinking and analytical skills.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/English.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>English Language</h4>
+                <p>Enhance your understanding of the English language. Explore grammar, vocabulary, and communication skills vital for effective expression and connection.</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="course swiper-slide">
+            <div class="course-image">
+                <img src="images(studyhub)/COMMERCE.jpg" alt="ARTS">
+            </div>
+            <div class="course-info">
+                <h4>COMMERCE</h4>
+                <p>Learn the principles and secrets adopted by the Largest biggest tycoons and build your own empire!</p>
+                <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        
+    </div>
+</section>
+<!-- Courses ends -->
+
+
+
+
+<!-- footer starts -->
+
+<footer class="footer">
+    <div class="container footer-container">
+
+        <div class="footer-1">
+            <a href="secondpage.html" class="footer-logo"><h4>Study<span>Hub</span></a>
+            <p>Bridging the learning gap</p>
+        </div>
+
+        <div class="footer-2">
+            <h4>Quick Links</h4>
+            <ul class="quick-links">
+                <li><a href="secondpage.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="course.html">Courses</a></li>   
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="school.html">Intl. School</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+234-703-857-1667</p>
+                <p>+234-903-555-8335</p>
+                <p>peeceebeestudyhub@gmail.com</p>
+            </div>
+            <ul class="footer-socials">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></i></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footer-copyright">
+        <small>Copyright &copy; PEECEEBEE</small>
+    </div>
+</footer>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="about.js"></script>
+
+<script>
+    var swiper = new Swiper(".courses-slider", {
+        loop:true,
+        spaceBetween: 60,
+        breakpoints:{
+        640:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        
+    });
+</script>
 </body>
 </html>
