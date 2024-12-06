@@ -87,26 +87,33 @@ body{
     transform: translate(-50%, -50%);
     display: flex;
     
+    
     .start{
         letter-spacing: 10px;
         font-family: monospace;
         font-size: 1.5em;
         text-decoration: none;
-        border-right: 2px solid;
-        color: black;
+        border-right: 1px solid rgba(0, 0, 0, 0.589);
+        background: rgba(245, 4, 4, 0.589);
+        color: white;
+        padding: 1rem 2rem;
         width: 100%;
         white-space: nowrap;
         overflow: hidden;
         
         animation: 
             cursor .4s step-end infinite alternate, typer 5s ease;
-        
         } 
 }
 
 /* typing effect */
 @keyframes typer {
-    from { width: 0 }
+    from { width: 0}
+    
+    /* to{
+        border: 1px solid black;
+        padding: 1rem 2rem;
+    } */
 }
 
 /* cursor blinking */
