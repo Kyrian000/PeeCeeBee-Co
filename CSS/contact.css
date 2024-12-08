@@ -127,10 +127,7 @@ nav{
 }
 
 
-    /* footer starts here  */
-    .footer{
-        /* margin-top: 10rem; */
-    }
+    
 
     
 @media screen and (max-width: 1024px) {
@@ -190,8 +187,6 @@ nav{
             }
             .contact-form{
                 margin: 0 1.5rem 3rem;
-            }
-            .contact-form{
                 .form-name{
                     flex-direction: column;
                     input[type="text"]{

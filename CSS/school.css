@@ -7,20 +7,21 @@
     list-style: none;
     box-sizing: border-box;
     transition: all 400ms ease;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
-body{
-    background-image: url('/Images/Under\ Construction.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 600px) {
-    body{
-        width: 50vw;
-        height: 50vh;
-        background-color: black;
+    h1{
+        font-weight: 100;
+        left: 55%;
     }
 }
